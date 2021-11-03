@@ -1,10 +1,12 @@
 # Laravel8-Docker-Template
 Ready to go Laravel 8 starter template built into Docker image with MySQL included.\
-Breeze auth scaffolding at http://localhost/login and so on.\
-phpMyAdmin at http://localhost:8080/ \
-Composer 2 included. \
-This template was built and tested in WSL2 environment, while Chrome browser was running in Windows10 to visit the application.\
-**For dev use only.**
+
+- Breeze auth scaffolding at http://localhost/login and so on.\
+- phpMyAdmin at http://localhost:8080/ \
+- Composer 2 included. \
+
+This template was built and tested in WSL2 environment, while Chrome browser was running in Windows10 to visit the Laravel 8 application.\
+***For dev use only.***
 
 ## Setup instructions
 1. Clone the repo
