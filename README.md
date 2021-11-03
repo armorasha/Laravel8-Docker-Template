@@ -17,4 +17,4 @@ Composer 2 included. \
    - `php artisan key:generate`
 4. Visit http://localhost/ for Laravel app's homescreen and phpMyAdmin is at http://localhost:8080/
 
-_ Note to self: See Docker-Laravel-VueJS Summary.docx for setup instructions._
+*Note to self: See Docker-Laravel-VueJS Summary.docx for setup instructions.*
