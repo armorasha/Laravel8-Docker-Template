@@ -7,7 +7,7 @@ Composer 2 included. \
 
 ## Setup instructions
 1. Clone the repo
-2. From within `application\` folder:
+2. From within `application\` folder (which is the project root folder):
    - Run `$ php ../composer2/composer.phar install` to install vendor libraries
    - Run `$ chmod -R o+rw bootstrap/ storage/` to fix permission issues
    - Run `$ docker-compose up -d --build` to build and run the docker containers (this may take up to 10-15 mins)
@@ -16,5 +16,6 @@ Composer 2 included. \
 3. Once within the `app` docker container's CLI as in `root@53fcfcee10d4:/srv/app#`, generate key using
    - `php artisan key:generate`
 4. Visit http://localhost/ for Laravel app's homescreen and phpMyAdmin is at http://localhost:8080/
+5. As the laravel app is now running, start modifying laravel code to suit your needs using an IDE like VS Code.
 
-*Note to self: See Docker-Laravel-VueJS Summary.docx for setup instructions.*
+*Note to self: See Docker-Laravel-VueJS Summary.docx for instructions on building this template from scratch.*
