@@ -1,8 +1,20 @@
 # Laravel8-Docker-Template
-Ready to go Laravel 8 starter template built into Docker image with MySQL.
-Breeze auth scaffolding at http://localhost/login and so on.
-phpMyAdmin at http://localhost:8080/
-Composer 2 included.
-For dev use only.
+Ready to go Laravel 8 starter template built into Docker image with MySQL included.\
+Breeze auth scaffolding at http://localhost/login and so on.\
+phpMyAdmin at http://localhost:8080/ \
+Composer 2 included. \
+**For dev use only.**
 
-See Docker-Laravel-VueJS Summary.docx for setup instructions.
+## Setup instructions
+1. Clone the repo
+2. From within `application\` folder:
+   - Run `$ php ../composer2/composer.phar install` to install vendor libraries
+   - Run `$ chmod -R o+rw bootstrap/ storage/` to fix permission issues
+   - Run `$ docker-compose up -d --build` to build and run the docker containers (this may take up to 10-15 mins)
+   - Run `$ cp .env.example .env` to create an `.env` file
+   - Run `$ docker-compose exec app /bin/bash` to enter the `app` docker container's CLI
+3. Once within the `app` docker container's CLI as in `root@53fcfcee10d4:/srv/app#`, generate key using
+   - `php artisan key:generate`
+4. Visit http://localhost/ for Laravel app's homescreen and phpMyAdmin is at http://localhost:8080/
+
+_ Note to self: See Docker-Laravel-VueJS Summary.docx for setup instructions._
