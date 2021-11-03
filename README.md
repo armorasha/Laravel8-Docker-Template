@@ -3,6 +3,7 @@ Ready to go Laravel 8 starter template built into Docker image with MySQL includ
 Breeze auth scaffolding at http://localhost/login and so on.\
 phpMyAdmin at http://localhost:8080/ \
 Composer 2 included. \
+This template was built and tested in WSL2 environment, while Chrome browser was running in Windows10 to visit the application.\
 **For dev use only.**
 
 ## Setup instructions
@@ -16,6 +17,6 @@ Composer 2 included. \
 3. Once within the `app` docker container's CLI as in `root@53fcfcee10d4:/srv/app#`, generate key using
    - `php artisan key:generate`
 4. Visit http://localhost/ for Laravel app's homescreen and phpMyAdmin is at http://localhost:8080/
-5. As the laravel app is now running, start modifying laravel code to suit your needs using an IDE like VS Code.
+5. As the laravel app is now up and running, start modifying laravel code to suit your needs using an IDE like VS Code.
 
 *Note to self: See Docker-Laravel-VueJS Summary.docx for instructions on building this template from scratch.*
