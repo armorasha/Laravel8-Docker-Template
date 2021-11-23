@@ -17,6 +17,7 @@ This template was built and tested in WSL2 environment, while Chrome browser was
    - Run `$ docker-compose up -d --build` to build and run the docker containers (this may take up to 10-15 mins)
    - Run `$ cp .env.example .env` to create an `.env` file
    - Run `$ docker-compose exec app /bin/bash` to enter the `app` docker container's CLI
+   - (Make sure you run `$ docker-compose up -d` next time so you don't re-build containers)
 3. Once within the `app` docker container's CLI as in `root@53fcfcee10d4:/srv/app#`, generate key using
    - `php artisan key:generate`
 4. Visit http://localhost/ for Laravel app's homescreen and phpMyAdmin is at http://localhost:8080/
